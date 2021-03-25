@@ -6,14 +6,14 @@ public class ThePlusBlock {
         int width, height, i, j;
 
         System.out.print(" Enter the height : ");
-        width = sc.nextInt();
-
-        System.out.print(" Enter the width : ");
         height = sc.nextInt();
 
-        for (i = 0; i < width; i++) {
-            for (j = 0; j < height; j++) {
-                if (i == width / 2 || j == height / 2)
+        System.out.print(" Enter the width : ");
+        width = sc.nextInt();
+
+        for (i = 0; i <= 2*height; i++) {
+            for (j = 0; j <= 2*width; j++) {
+                if (i == height || j == width)
                     System.out.print(" ");
                 else
                     System.out.print("#");
